@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.10.12 on linux)" generated="2024-11-13T17:22:07.592096" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 1" source="/home/vvdn29901/PycharmProjects/ROBOT_PROJECT/Robot_Setup_Python/TestCase/TC_1.robot">
+<test id="s1-t1" name="TestLogin" line="11">
+<kw name="LoginToApplication">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:07.691107" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-13T17:22:07.690917" elapsed="3.682178"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-13T17:22:11.373316" elapsed="0.019777"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:11.405456" level="INFO">Page title is 'OrangeHRM'.</msg>
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-11-13T17:22:11.393274" elapsed="0.012300"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:22:14.406615" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:11.405831" elapsed="3.001161"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:14.452237" level="INFO">Element '//*[@name="username"]' is displayed.</msg>
+<arg>${username_locator}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-13T17:22:14.407594" elapsed="0.044768"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${username_locator}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-11-13T17:22:14.452579" elapsed="0.022258"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:14.475345" level="INFO">Typing text 'Admin' into text field '//*[@name="username"]'.</msg>
+<arg>${username_locator}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:14.475057" elapsed="0.049475"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:14.525129" level="INFO">Typing password into text field '//*[@name="password"]'.</msg>
+<msg time="2024-11-13T17:22:14.546562" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//*[@name="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:14.524796" elapsed="0.058663"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:14.583964" level="INFO">Clicking button '//*[@type="submit"]'.</msg>
+<arg>//*[@type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:14.583704" elapsed="1.195241"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:22:19.779527" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:15.779184" elapsed="4.000509"/>
+</kw>
+<status status="PASS" start="2024-11-13T17:22:07.690446" elapsed="12.089413"/>
+</kw>
+<kw name="Recruitment">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:19.781252" level="INFO">Clicking element '//span[text() = 'Recruitment']'.</msg>
+<arg>//span[text() = 'Recruitment']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:19.780986" elapsed="0.790296"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:22:23.571963" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:20.571523" elapsed="3.000887"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:23.573836" level="INFO">Clicking element '//*[text() = 'Job Title']/../..//i'.</msg>
+<arg>//*[text() = 'Job Title']/../..//i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:23.573099" elapsed="0.075043"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:22:26.648786" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:23.648376" elapsed="3.000753"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:26.650739" level="INFO">Clicking element '//span[text() = 'Automaton Tester']'.</msg>
+<arg>//span[text() = 'Automaton Tester']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:26.649897" elapsed="0.050589"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:22:29.701334" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:26.700736" elapsed="3.000960"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:29.702776" level="INFO">Clicking element '//*[text() = 'Vacancy']/../..//i'.</msg>
+<arg>//*[text() = 'Vacancy']/../..//i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:29.702223" elapsed="0.072381"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:22:32.775524" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:29.774843" elapsed="3.001084"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:32.777226" level="INFO">Clicking element '//span[text() = 'Junior Account Assistant']'.</msg>
+<arg>//span[text() = 'Junior Account Assistant']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:32.776562" elapsed="0.072087"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:22:35.849330" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:32.848859" elapsed="3.000839"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:35.850849" level="INFO">Clicking element '//*[text() = 'Hiring Manager']/../..//i'.</msg>
+<arg>//*[text() = 'Hiring Manager']/../..//i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:35.850241" elapsed="0.066348"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:22:38.917554" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:35.916850" elapsed="3.001113"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:22:40.919493" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:38.918596" elapsed="2.001271"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:40.921162" level="INFO">Clicking element '//*[text() = 'Status']/../..//i'.</msg>
+<arg>//*[text() = 'Status']/../..//i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:40.920492" elapsed="0.061816"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:22:43.983322" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:40.982691" elapsed="3.001005"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:43.985004" level="INFO">Clicking element '//span[text() = 'Shortlisted']'.</msg>
+<arg>//span[text() = 'Shortlisted']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:43.984442" elapsed="0.068649"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:22:46.054112" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:44.053518" elapsed="2.001107"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:46.056077" level="INFO">Typing text 'Hello,How,are,you' into text field '//*[@placeholder="Enter comma seperated words..."]'.</msg>
+<arg>//*[@placeholder="Enter comma seperated words..."]</arg>
+<arg>Hello,How,are,you</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:46.055440" elapsed="0.136543"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:22:48.192931" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:46.192228" elapsed="2.001146"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:48.195010" level="INFO">Clicking element '//label[text()= 'Date of Application']/../../..//i[@class="oxd-icon bi-calendar oxd-date-input-icon"]'.</msg>
+<arg>//label[text()= 'Date of Application']/../../..//i[@class="oxd-icon bi-calendar oxd-date-input-icon"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:48.194154" elapsed="0.092462"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:22:51.287372" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:48.286849" elapsed="3.000838"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:51.288620" level="INFO">Clicking element '(//*[@class="oxd-calendar-selector-month-selected"])'.</msg>
+<arg>(//*[@class="oxd-calendar-selector-month-selected"])</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:51.288120" elapsed="0.077917"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:22:54.366933" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:51.366302" elapsed="3.000955"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:54.368493" level="INFO">Clicking element '//li[text() = 'April']'.</msg>
+<arg>//li[text() = 'April']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:54.367858" elapsed="0.067468"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:22:58.435978" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:54.435599" elapsed="4.000708"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:22:58.437312" level="INFO">Clicking element '//*[@class="oxd-calendar-selector-year-selected"]//i'.</msg>
+<arg>//*[@class="oxd-calendar-selector-year-selected"]//i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:22:58.436815" elapsed="0.065361"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:23:01.503098" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:22:58.502464" elapsed="3.001089"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:23:01.504902" level="INFO">Clicking element '//li[text() = '2024']'.</msg>
+<arg>//li[text() = '2024']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:23:01.504174" elapsed="0.068207"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:23:04.573327" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:23:01.572665" elapsed="3.001078"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:23:04.575169" level="INFO">Clicking element '//*[@class="oxd-calendar-date" and text()= '10']'.</msg>
+<arg>//*[@class="oxd-calendar-date" and text()= '10']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:23:04.574407" elapsed="0.075820"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:23:07.650868" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:23:04.650465" elapsed="3.000699"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:23:07.652229" level="INFO">Clicking element '(//*/../../..//i[@class="oxd-icon bi-calendar oxd-date-input-icon"])[2]'.</msg>
+<arg>(//*/../../..//i[@class="oxd-icon bi-calendar oxd-date-input-icon"])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:23:07.651676" elapsed="0.071383"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:23:10.724771" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:23:07.723734" elapsed="3.001414"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:23:10.726512" level="INFO">Clicking element '(//*[@class="oxd-calendar-selector-month-selected"])'.</msg>
+<arg>(//*[@class="oxd-calendar-selector-month-selected"])</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:23:10.725781" elapsed="0.075245"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:23:13.801783" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:23:10.801299" elapsed="3.000845"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:23:13.803366" level="INFO">Clicking element '//li[text() = 'April']'.</msg>
+<arg>//li[text() = 'April']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:23:13.802722" elapsed="0.070235"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:23:17.873634" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:23:13.873192" elapsed="4.000814"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:23:17.875374" level="INFO">Clicking element '//*[@class="oxd-calendar-selector-year-selected"]//i'.</msg>
+<arg>//*[@class="oxd-calendar-selector-year-selected"]//i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:23:17.874706" elapsed="0.073298"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:23:20.948809" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:23:17.948232" elapsed="3.000978"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:23:20.950633" level="INFO">Clicking element '//li[text() = '2024']'.</msg>
+<arg>//li[text() = '2024']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:23:20.949904" elapsed="0.074066"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:23:24.025042" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:23:21.024310" elapsed="3.001371"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:23:24.027582" level="INFO">Clicking element '//*[@class="oxd-calendar-date" and text()= '14']'.</msg>
+<arg>//*[@class="oxd-calendar-date" and text()= '14']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:23:24.026383" elapsed="0.062019"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:23:27.089091" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:23:24.088651" elapsed="3.000815"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:23:27.090572" level="INFO">Clicking element '//*[contains(text(),"Method of Application")]/../..//i'.</msg>
+<arg>//*[contains(text(),"Method of Application")]/../..//i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:23:27.089987" elapsed="0.083813"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:23:29.175081" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:23:27.174282" elapsed="2.001306"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:23:29.177244" level="INFO">Clicking element '//span[text()= 'Manual']'.</msg>
+<arg>//span[text()= 'Manual']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:23:29.176414" elapsed="0.071008"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:23:31.248501" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:23:29.247824" elapsed="2.001099"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:23:31.250705" level="INFO">Clicking element '//*[@class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"]'.</msg>
+<arg>//*[@class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:23:31.249828" elapsed="0.071533"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-13T17:23:31.321908" level="INFO">Clicking element '//span[text()='Dashboard']'.</msg>
+<arg>//span[text()='Dashboard']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T17:23:31.321662" elapsed="2.267988"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-13T17:23:36.590300" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-13T17:23:33.589838" elapsed="3.000905"/>
+</kw>
+<status status="PASS" start="2024-11-13T17:22:19.780497" elapsed="76.810693"/>
+</kw>
+<doc>Test_Case_For_Login_Check</doc>
+<tag>Login</tag>
+<status status="PASS" start="2024-11-13T17:22:07.689830" elapsed="88.902086"/>
+</test>
+<status status="PASS" start="2024-11-13T17:22:07.592870" elapsed="89.000940"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Login</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 1">TC 1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
