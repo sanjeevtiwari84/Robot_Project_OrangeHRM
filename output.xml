@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.10.12 on linux)" generated="2024-11-27T17:26:23.751732" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="/home/vvdn29901/PycharmProject/Assignement_1/tests">
+<suite id="s1-s1" name="Test Checkbox Handling" source="/home/vvdn29901/PycharmProject/Assignement_1/tests/test_checkbox_handling.robot">
+<test id="s1-s1-t1" name="Checkbox Check and Uncheck Test" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:26:23.854944" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/checkbox'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-27T17:26:23.854715" elapsed="4.402470"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-27T17:26:28.257504" elapsed="0.029136"/>
+</kw>
+<kw name="Checkbox Check and Uncheck" owner="keywords_checkbox_handling">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:26:28.288397" level="INFO">Clicking element '//*[@class="rct-checkbox"]'.</msg>
+<arg>//*[@class="rct-checkbox"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-27T17:26:28.287571" elapsed="0.060255"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-27T17:26:32.348753" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-27T17:26:28.348050" elapsed="4.001093"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:26:32.350501" level="INFO">Clicking element '//*[@class="rct-checkbox"]'.</msg>
+<arg>//*[@class="rct-checkbox"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-27T17:26:32.349796" elapsed="0.076485"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-27T17:26:36.427125" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-27T17:26:32.426617" elapsed="4.001012"/>
+</kw>
+<status status="PASS" start="2024-11-27T17:26:28.287096" elapsed="8.140995"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-27T17:26:36.428897" elapsed="0.067505"/>
+</kw>
+<status status="PASS" start="2024-11-27T17:26:23.854043" elapsed="12.642682"/>
+</test>
+<status status="PASS" start="2024-11-27T17:26:23.766079" elapsed="12.731266"/>
+</suite>
+<suite id="s1-s2" name="Test Dropdown Handling" source="/home/vvdn29901/PycharmProject/Assignement_1/tests/test_dropdown_handling.robot">
+<test id="s1-s2-t1" name="Dropdown Handling Test" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:26:36.502138" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/checkbox'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-27T17:26:36.501949" elapsed="3.551969"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-27T17:26:40.054301" elapsed="0.027694"/>
+</kw>
+<kw name="Handle Dropdown" owner="keywords_dropdown_handling">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:26:40.082853" level="INFO">Opening url 'https://letcode.in/dropdowns'</msg>
+<arg>${dropdown_url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-27T17:26:40.082681" elapsed="1.771849"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-27T17:26:44.855553" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-27T17:26:41.854866" elapsed="3.001108"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:26:44.857555" level="INFO">Selecting options from selection list 'id=fruits' by value 2.</msg>
+<arg>id=fruits</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-11-27T17:26:44.856724" elapsed="0.102953"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-27T17:26:48.960488" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-27T17:26:44.960003" elapsed="4.000829"/>
+</kw>
+<status status="PASS" start="2024-11-27T17:26:40.082361" elapsed="8.878834"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-27T17:26:48.961780" elapsed="0.066445"/>
+</kw>
+<status status="PASS" start="2024-11-27T17:26:36.501681" elapsed="12.526875"/>
+</test>
+<status status="PASS" start="2024-11-27T17:26:36.498025" elapsed="12.531008"/>
+</suite>
+<suite id="s1-s3" name="Test Mouse Hover" source="/home/vvdn29901/PycharmProject/Assignement_1/tests/test_mouse_hover.robot">
+<test id="s1-s3-t1" name="Mouse Hover Test" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:26:49.033259" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/checkbox'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-27T17:26:49.033020" elapsed="12.703789"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-27T17:27:01.737095" elapsed="0.023064"/>
+</kw>
+<kw name="Handle Mouse Hover" owner="keywords_mouse_hover">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:27:01.761400" level="INFO">Opening url 'https://www.amazon.com'</msg>
+<arg>${hover_url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-27T17:27:01.761145" elapsed="2.388980"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-27T17:27:08.150972" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-27T17:27:04.150457" elapsed="4.000930"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:27:08.152716" level="INFO">Simulating Mouse Over on element '//span[contains(text(), 'Account &amp; Lists')]'.</msg>
+<arg>//span[contains(text(), 'Account &amp; Lists')]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-11-27T17:27:08.152020" elapsed="0.415764"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-27T17:27:13.569240" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-27T17:27:08.568351" elapsed="5.001286"/>
+</kw>
+<status status="PASS" start="2024-11-27T17:27:01.760694" elapsed="11.809341"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-27T17:27:13.570720" elapsed="0.072462"/>
+</kw>
+<status status="PASS" start="2024-11-27T17:26:49.032665" elapsed="24.610800"/>
+</test>
+<status status="PASS" start="2024-11-27T17:26:49.029719" elapsed="24.614061"/>
+</suite>
+<suite id="s1-s4" name="Test Radio Button Handling" source="/home/vvdn29901/PycharmProject/Assignement_1/tests/test_radio_button_handling.robot">
+<test id="s1-s4-t1" name="Radio Button Test" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:27:13.648894" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/radio-button'.</msg>
+<arg>${radio_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-27T17:27:13.648516" elapsed="4.075340"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-27T17:27:17.724230" elapsed="0.022590"/>
+</kw>
+<kw name="Handle Radio Button" owner="keywords_radio_button_handling">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:27:17.747727" level="INFO">Clicking element '//span[contains(text(),'Radio')]'.</msg>
+<arg>//span[contains(text(),'Radio')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-27T17:27:17.747546" elapsed="0.061892"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-27T17:27:21.810263" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-27T17:27:17.809669" elapsed="4.000953"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:27:21.811863" level="INFO">Clicking element '//*[@for="yesRadio"]'.</msg>
+<arg>//*[@for="yesRadio"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-27T17:27:21.811218" elapsed="0.091685"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-27T17:27:23.903713" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-27T17:27:21.903172" elapsed="2.000961"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:27:23.906342" level="INFO">Executing JavaScript:
+document.getElementById("yesRadio").checked = false;
+Without any arguments.</msg>
+<arg>document.getElementById("yesRadio").checked = false;</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-11-27T17:27:23.905109" elapsed="0.014896"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-27T17:27:25.921237" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-27T17:27:23.920487" elapsed="2.001232"/>
+</kw>
+<status status="PASS" start="2024-11-27T17:27:17.747225" elapsed="8.174955"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-27T17:27:25.922901" elapsed="0.065085"/>
+</kw>
+<status status="PASS" start="2024-11-27T17:27:13.648024" elapsed="12.340365"/>
+</test>
+<status status="PASS" start="2024-11-27T17:27:13.644239" elapsed="12.344491"/>
+</suite>
+<suite id="s1-s5" name="Test Window Handling" source="/home/vvdn29901/PycharmProject/Assignement_1/tests/test_window_handling.robot">
+<test id="s1-s5-t1" name="Window Handling Test" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:27:25.993082" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/checkbox'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-27T17:27:25.992818" elapsed="4.125763"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-27T17:27:30.118887" elapsed="0.023006"/>
+</kw>
+<kw name="Handle New Tabs" owner="keywords_window_handling">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:27:30.292682" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot_tab1.png"&gt;&lt;img src="screenshot_tab1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${screenshot1}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-27T17:27:30.143488" elapsed="0.149318"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-27T17:27:33.293448" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-27T17:27:30.292967" elapsed="3.000797"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:27:33.295347" level="INFO">Executing JavaScript:
+window.open();
+Without any arguments.</msg>
+<arg>window.open();</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-11-27T17:27:33.294256" elapsed="0.029822"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-27T17:27:36.325378" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-27T17:27:33.324820" elapsed="3.000917"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-11-27T17:27:36.326302" elapsed="0.017480"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-27T17:27:39.345343" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-27T17:27:36.344354" elapsed="3.001325"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:27:39.346897" level="INFO">Opening url 'https://demoqa.com/text-box'</msg>
+<arg>${textbox_url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-27T17:27:39.346303" elapsed="1.420305"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-27T17:27:43.767797" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-27T17:27:40.767075" elapsed="3.001196"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-11-27T17:27:43.877169" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot_tab2.png"&gt;&lt;img src="screenshot_tab2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${screenshot2}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-11-27T17:27:43.769006" elapsed="0.108309"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-27T17:27:47.878196" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-27T17:27:43.877534" elapsed="4.001133"/>
+</kw>
+<status status="PASS" start="2024-11-27T17:27:30.142615" elapsed="17.736567"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-27T17:27:47.879963" elapsed="0.066829"/>
+</kw>
+<status status="PASS" start="2024-11-27T17:27:25.992449" elapsed="21.954661"/>
+</test>
+<status status="PASS" start="2024-11-27T17:27:25.989304" elapsed="21.958177"/>
+</suite>
+<status status="PASS" start="2024-11-27T17:26:23.752413" elapsed="84.195691"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Checkbox Handling">Tests.Test Checkbox Handling</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Test Dropdown Handling">Tests.Test Dropdown Handling</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Test Mouse Hover">Tests.Test Mouse Hover</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="Test Radio Button Handling">Tests.Test Radio Button Handling</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s5" name="Test Window Handling">Tests.Test Window Handling</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
