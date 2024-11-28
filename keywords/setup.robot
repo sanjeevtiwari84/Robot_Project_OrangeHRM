@@ -1,7 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource    ../variables/variables.robot
-*** Test Cases ***
+*** Keywords ***
 Suite_Setup
     Open Browser    ${url}    Chrome
     Maximize Browser Window

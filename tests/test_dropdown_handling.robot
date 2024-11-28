@@ -1,11 +1,9 @@
 *** Settings ***
-Resource    ../variables/variables.robot
 Resource    ../keywords/keywords_dropdown_handling.robot
 Library     SeleniumLibrary
-
+Resource    ../keywords/setup.robot
+Suite Setup    Suite_Setup
+Suite Teardown    Suite_Teardown
 *** Test Cases ***
 Dropdown Handling Test
-    Open Browser    ${url}    ${browser}
-    Maximize Browser Window
     Handle Dropdown
-    Close Browser
