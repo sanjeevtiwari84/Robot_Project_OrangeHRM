@@ -6,6 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a3f7cb20-a6d1-49d1-bdd5-81d9c33e801d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot_tab1.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot_tab1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot_tab2.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot_tab2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_checkbox_handling.robot" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_checkbox_handling.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_dropdown_handling.robot" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_dropdown_handling.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_mouse_hover.robot" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_mouse_hover.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_radio_button_handling.robot" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_radio_button_handling.robot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_window_handling.robot" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_window_handling.robot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,14 +42,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Assignment",
-    "last_opened_file_path": "/home/vvdn29901/PycharmProject/Assignement_1",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Assignment&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/vvdn29901/PycharmProject/Assignement_1&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>

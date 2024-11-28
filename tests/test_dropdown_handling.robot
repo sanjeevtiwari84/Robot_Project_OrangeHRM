@@ -6,4 +6,6 @@ Suite Setup    Suite_Setup
 Suite Teardown    Suite_Teardown
 *** Test Cases ***
 Dropdown Handling Test
+    Sleep    3
     Handle Dropdown
+    Sleep    3

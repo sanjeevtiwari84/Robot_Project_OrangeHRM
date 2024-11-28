@@ -6,4 +6,6 @@ Suite Setup    Suite_Setup
 Suite Teardown    Suite_Teardown
 *** Test Cases ***
 Radio Button Test
+    Sleep    3
     Handle Radio Button
+    Sleep    3

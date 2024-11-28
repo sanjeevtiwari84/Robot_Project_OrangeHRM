@@ -1,299 +1,389 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.10.12 on linux)" generated="2024-11-27T17:26:23.751732" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.10.12 on linux)" generated="2024-11-28T09:50:37.826618" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/vvdn29901/PycharmProject/Assignement_1/tests">
 <suite id="s1-s1" name="Test Checkbox Handling" source="/home/vvdn29901/PycharmProject/Assignement_1/tests/test_checkbox_handling.robot">
-<test id="s1-s1-t1" name="Checkbox Check and Uncheck Test" line="7">
+<kw name="Suite_Setup" owner="setup" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:26:23.854944" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/checkbox'.</msg>
+<msg time="2024-11-28T09:50:37.927039" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/checkbox'.</msg>
 <arg>${url}</arg>
-<arg>${browser}</arg>
+<arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-27T17:26:23.854715" elapsed="4.402470"/>
+<status status="PASS" start="2024-11-28T09:50:37.926833" elapsed="10.314070"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-11-27T17:26:28.257504" elapsed="0.029136"/>
+<status status="PASS" start="2024-11-28T09:50:48.241223" elapsed="0.027209"/>
+</kw>
+<status status="PASS" start="2024-11-28T09:50:37.926416" elapsed="10.342162"/>
+</kw>
+<test id="s1-s1-t1" name="Checkbox Check and Uncheck Test" line="8">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-28T09:50:51.269896" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-28T09:50:48.269128" elapsed="3.001336"/>
 </kw>
 <kw name="Checkbox Check and Uncheck" owner="keywords_checkbox_handling">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:26:28.288397" level="INFO">Clicking element '//*[@class="rct-checkbox"]'.</msg>
+<msg time="2024-11-28T09:50:51.273856" level="INFO">Clicking element '//*[@class="rct-checkbox"]'.</msg>
 <arg>//*[@class="rct-checkbox"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-27T17:26:28.287571" elapsed="0.060255"/>
+<status status="PASS" start="2024-11-28T09:50:51.272898" elapsed="0.081792"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-27T17:26:32.348753" level="INFO">Slept 4 seconds.</msg>
+<msg time="2024-11-28T09:50:55.355524" level="INFO">Slept 4 seconds.</msg>
 <arg>4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-27T17:26:28.348050" elapsed="4.001093"/>
+<status status="PASS" start="2024-11-28T09:50:51.354940" elapsed="4.000991"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:26:32.350501" level="INFO">Clicking element '//*[@class="rct-checkbox"]'.</msg>
+<msg time="2024-11-28T09:50:55.357239" level="INFO">Clicking element '//*[@class="rct-checkbox"]'.</msg>
 <arg>//*[@class="rct-checkbox"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-27T17:26:32.349796" elapsed="0.076485"/>
+<status status="PASS" start="2024-11-28T09:50:55.356592" elapsed="0.066137"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-27T17:26:36.427125" level="INFO">Slept 4 seconds.</msg>
+<msg time="2024-11-28T09:50:59.423705" level="INFO">Slept 4 seconds.</msg>
 <arg>4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-27T17:26:32.426617" elapsed="4.001012"/>
+<status status="PASS" start="2024-11-28T09:50:55.423061" elapsed="4.001110"/>
 </kw>
-<status status="PASS" start="2024-11-27T17:26:28.287096" elapsed="8.140995"/>
+<status status="PASS" start="2024-11-28T09:50:51.271758" elapsed="8.152860"/>
 </kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-28T09:51:02.426451" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-28T09:50:59.425344" elapsed="3.001626"/>
+</kw>
+<status status="PASS" start="2024-11-28T09:50:48.268684" elapsed="14.159446"/>
+</test>
+<kw name="Suite_Teardown" owner="setup" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-11-27T17:26:36.428897" elapsed="0.067505"/>
+<status status="PASS" start="2024-11-28T09:51:02.431401" elapsed="0.068713"/>
 </kw>
-<status status="PASS" start="2024-11-27T17:26:23.854043" elapsed="12.642682"/>
-</test>
-<status status="PASS" start="2024-11-27T17:26:23.766079" elapsed="12.731266"/>
+<status status="PASS" start="2024-11-28T09:51:02.430621" elapsed="0.069669"/>
+</kw>
+<status status="PASS" start="2024-11-28T09:50:37.840049" elapsed="24.660296"/>
 </suite>
 <suite id="s1-s2" name="Test Dropdown Handling" source="/home/vvdn29901/PycharmProject/Assignement_1/tests/test_dropdown_handling.robot">
-<test id="s1-s2-t1" name="Dropdown Handling Test" line="7">
+<kw name="Suite_Setup" owner="setup" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:26:36.502138" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/checkbox'.</msg>
+<msg time="2024-11-28T09:51:02.504286" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/checkbox'.</msg>
 <arg>${url}</arg>
-<arg>${browser}</arg>
+<arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-27T17:26:36.501949" elapsed="3.551969"/>
+<status status="PASS" start="2024-11-28T09:51:02.504111" elapsed="20.877171"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-11-27T17:26:40.054301" elapsed="0.027694"/>
+<status status="PASS" start="2024-11-28T09:51:23.381547" elapsed="0.030462"/>
+</kw>
+<status status="PASS" start="2024-11-28T09:51:02.503933" elapsed="20.908281"/>
+</kw>
+<test id="s1-s2-t1" name="Dropdown Handling Test" line="8">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-28T09:51:26.413965" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-28T09:51:23.413076" elapsed="3.001393"/>
 </kw>
 <kw name="Handle Dropdown" owner="keywords_dropdown_handling">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:26:40.082853" level="INFO">Opening url 'https://letcode.in/dropdowns'</msg>
+<msg time="2024-11-28T09:51:26.417707" level="INFO">Opening url 'https://letcode.in/dropdowns'</msg>
 <arg>${dropdown_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-11-27T17:26:40.082681" elapsed="1.771849"/>
+<status status="PASS" start="2024-11-28T09:51:26.417076" elapsed="1.621230"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-27T17:26:44.855553" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-11-28T09:51:31.039217" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-27T17:26:41.854866" elapsed="3.001108"/>
+<status status="PASS" start="2024-11-28T09:51:28.038489" elapsed="3.001216"/>
 </kw>
 <kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:26:44.857555" level="INFO">Selecting options from selection list 'id=fruits' by value 2.</msg>
+<msg time="2024-11-28T09:51:31.041343" level="INFO">Selecting options from selection list 'id=fruits' by value 2.</msg>
 <arg>id=fruits</arg>
 <arg>2</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-11-27T17:26:44.856724" elapsed="0.102953"/>
+<status status="PASS" start="2024-11-28T09:51:31.040512" elapsed="0.095726"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-27T17:26:48.960488" level="INFO">Slept 4 seconds.</msg>
+<msg time="2024-11-28T09:51:35.136947" level="INFO">Slept 4 seconds.</msg>
 <arg>4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-27T17:26:44.960003" elapsed="4.000829"/>
+<status status="PASS" start="2024-11-28T09:51:31.136462" elapsed="4.000948"/>
 </kw>
-<status status="PASS" start="2024-11-27T17:26:40.082361" elapsed="8.878834"/>
+<status status="PASS" start="2024-11-28T09:51:26.415828" elapsed="8.721935"/>
 </kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-28T09:51:38.139086" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-28T09:51:35.138346" elapsed="3.001146"/>
+</kw>
+<status status="PASS" start="2024-11-28T09:51:23.412347" elapsed="14.727919"/>
+</test>
+<kw name="Suite_Teardown" owner="setup" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-11-27T17:26:48.961780" elapsed="0.066445"/>
+<status status="PASS" start="2024-11-28T09:51:38.142492" elapsed="0.069328"/>
 </kw>
-<status status="PASS" start="2024-11-27T17:26:36.501681" elapsed="12.526875"/>
-</test>
-<status status="PASS" start="2024-11-27T17:26:36.498025" elapsed="12.531008"/>
+<status status="PASS" start="2024-11-28T09:51:38.141856" elapsed="0.070209"/>
+</kw>
+<status status="PASS" start="2024-11-28T09:51:02.501042" elapsed="35.711131"/>
 </suite>
 <suite id="s1-s3" name="Test Mouse Hover" source="/home/vvdn29901/PycharmProject/Assignement_1/tests/test_mouse_hover.robot">
-<test id="s1-s3-t1" name="Mouse Hover Test" line="7">
+<kw name="Suite_Setup" owner="setup" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:26:49.033259" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/checkbox'.</msg>
+<msg time="2024-11-28T09:51:38.218982" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/checkbox'.</msg>
 <arg>${url}</arg>
-<arg>${browser}</arg>
+<arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-27T17:26:49.033020" elapsed="12.703789"/>
+<status status="PASS" start="2024-11-28T09:51:38.218767" elapsed="10.045158"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-11-27T17:27:01.737095" elapsed="0.023064"/>
+<status status="PASS" start="2024-11-28T09:51:48.264177" elapsed="0.024104"/>
+</kw>
+<status status="PASS" start="2024-11-28T09:51:38.218522" elapsed="10.069931"/>
+</kw>
+<test id="s1-s3-t1" name="Mouse Hover Test" line="8">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-28T09:51:51.289774" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-28T09:51:48.289031" elapsed="3.001325"/>
 </kw>
 <kw name="Handle Mouse Hover" owner="keywords_mouse_hover">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:27:01.761400" level="INFO">Opening url 'https://www.amazon.com'</msg>
+<msg time="2024-11-28T09:51:51.293591" level="INFO">Opening url 'https://www.amazon.com'</msg>
 <arg>${hover_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-11-27T17:27:01.761145" elapsed="2.388980"/>
+<status status="PASS" start="2024-11-28T09:51:51.292970" elapsed="2.415791"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-27T17:27:08.150972" level="INFO">Slept 4 seconds.</msg>
+<msg time="2024-11-28T09:51:57.709582" level="INFO">Slept 4 seconds.</msg>
 <arg>4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-27T17:27:04.150457" elapsed="4.000930"/>
+<status status="PASS" start="2024-11-28T09:51:53.709072" elapsed="4.000909"/>
 </kw>
 <kw name="Mouse Over" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:27:08.152716" level="INFO">Simulating Mouse Over on element '//span[contains(text(), 'Account &amp; Lists')]'.</msg>
+<msg time="2024-11-28T09:51:57.711664" level="INFO">Simulating Mouse Over on element '//span[contains(text(), 'Account &amp; Lists')]'.</msg>
 <arg>//span[contains(text(), 'Account &amp; Lists')]</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="PASS" start="2024-11-27T17:27:08.152020" elapsed="0.415764"/>
+<status status="PASS" start="2024-11-28T09:51:57.710958" elapsed="0.318453"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-27T17:27:13.569240" level="INFO">Slept 5 seconds.</msg>
+<msg time="2024-11-28T09:52:03.030862" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-27T17:27:08.568351" elapsed="5.001286"/>
+<status status="PASS" start="2024-11-28T09:51:58.029988" elapsed="5.001285"/>
 </kw>
-<status status="PASS" start="2024-11-27T17:27:01.760694" elapsed="11.809341"/>
+<status status="PASS" start="2024-11-28T09:51:51.291746" elapsed="11.739903"/>
 </kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-28T09:52:06.033140" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-28T09:52:03.032217" elapsed="3.001343"/>
+</kw>
+<status status="PASS" start="2024-11-28T09:51:48.288572" elapsed="17.745737"/>
+</test>
+<kw name="Suite_Teardown" owner="setup" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-11-27T17:27:13.570720" elapsed="0.072462"/>
+<status status="PASS" start="2024-11-28T09:52:06.036275" elapsed="0.072357"/>
 </kw>
-<status status="PASS" start="2024-11-27T17:26:49.032665" elapsed="24.610800"/>
-</test>
-<status status="PASS" start="2024-11-27T17:26:49.029719" elapsed="24.614061"/>
+<status status="PASS" start="2024-11-28T09:52:06.035625" elapsed="0.073186"/>
+</kw>
+<status status="PASS" start="2024-11-28T09:51:38.213388" elapsed="27.895482"/>
 </suite>
 <suite id="s1-s4" name="Test Radio Button Handling" source="/home/vvdn29901/PycharmProject/Assignement_1/tests/test_radio_button_handling.robot">
-<test id="s1-s4-t1" name="Radio Button Test" line="7">
+<kw name="Suite_Setup" owner="setup" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:27:13.648894" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/radio-button'.</msg>
-<arg>${radio_url}</arg>
-<arg>${browser}</arg>
+<msg time="2024-11-28T09:52:06.113729" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/checkbox'.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-27T17:27:13.648516" elapsed="4.075340"/>
+<status status="PASS" start="2024-11-28T09:52:06.113545" elapsed="6.314312"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-11-27T17:27:17.724230" elapsed="0.022590"/>
+<status status="PASS" start="2024-11-28T09:52:12.428181" elapsed="0.028475"/>
+</kw>
+<status status="PASS" start="2024-11-28T09:52:06.113356" elapsed="6.343461"/>
+</kw>
+<test id="s1-s4-t1" name="Radio Button Test" line="8">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-28T09:52:15.458310" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-28T09:52:12.457510" elapsed="3.001505"/>
 </kw>
 <kw name="Handle Radio Button" owner="keywords_radio_button_handling">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:27:17.747727" level="INFO">Clicking element '//span[contains(text(),'Radio')]'.</msg>
+<msg time="2024-11-28T09:52:15.462588" level="INFO">Clicking element '//span[contains(text(),'Radio')]'.</msg>
 <arg>//span[contains(text(),'Radio')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-27T17:27:17.747546" elapsed="0.061892"/>
+<status status="PASS" start="2024-11-28T09:52:15.461929" elapsed="0.073047"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-27T17:27:21.810263" level="INFO">Slept 4 seconds.</msg>
+<msg time="2024-11-28T09:52:19.535791" level="INFO">Slept 4 seconds.</msg>
 <arg>4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-27T17:27:17.809669" elapsed="4.000953"/>
+<status status="PASS" start="2024-11-28T09:52:15.535304" elapsed="4.000827"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:27:21.811863" level="INFO">Clicking element '//*[@for="yesRadio"]'.</msg>
+<msg time="2024-11-28T09:52:19.537394" level="INFO">Clicking element '//*[@for="yesRadio"]'.</msg>
 <arg>//*[@for="yesRadio"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-27T17:27:21.811218" elapsed="0.091685"/>
+<status status="PASS" start="2024-11-28T09:52:19.536657" elapsed="0.069603"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-27T17:27:23.903713" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-11-28T09:52:21.606986" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-27T17:27:21.903172" elapsed="2.000961"/>
+<status status="PASS" start="2024-11-28T09:52:19.606455" elapsed="2.001037"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:27:23.906342" level="INFO">Executing JavaScript:
+<msg time="2024-11-28T09:52:21.609600" level="INFO">Executing JavaScript:
 document.getElementById("yesRadio").checked = false;
 Without any arguments.</msg>
 <arg>document.getElementById("yesRadio").checked = false;</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-11-27T17:27:23.905109" elapsed="0.014896"/>
+<status status="PASS" start="2024-11-28T09:52:21.608242" elapsed="0.016307"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-27T17:27:25.921237" level="INFO">Slept 2 seconds.</msg>
+<msg time="2024-11-28T09:52:23.625680" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-27T17:27:23.920487" elapsed="2.001232"/>
+<status status="PASS" start="2024-11-28T09:52:21.624946" elapsed="2.001223"/>
 </kw>
-<status status="PASS" start="2024-11-27T17:27:17.747225" elapsed="8.174955"/>
+<status status="PASS" start="2024-11-28T09:52:15.460651" elapsed="8.165978"/>
 </kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-28T09:52:26.628462" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-28T09:52:23.627365" elapsed="3.001603"/>
+</kw>
+<status status="PASS" start="2024-11-28T09:52:12.456940" elapsed="14.173154"/>
+</test>
+<kw name="Suite_Teardown" owner="setup" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-11-27T17:27:25.922901" elapsed="0.065085"/>
+<status status="PASS" start="2024-11-28T09:52:26.633295" elapsed="0.064787"/>
 </kw>
-<status status="PASS" start="2024-11-27T17:27:13.648024" elapsed="12.340365"/>
-</test>
-<status status="PASS" start="2024-11-27T17:27:13.644239" elapsed="12.344491"/>
+<status status="PASS" start="2024-11-28T09:52:26.632332" elapsed="0.065933"/>
+</kw>
+<status status="PASS" start="2024-11-28T09:52:06.109588" elapsed="20.588734"/>
 </suite>
 <suite id="s1-s5" name="Test Window Handling" source="/home/vvdn29901/PycharmProject/Assignement_1/tests/test_window_handling.robot">
-<test id="s1-s5-t1" name="Window Handling Test" line="7">
+<kw name="Suite_Setup" owner="setup" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:27:25.993082" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/checkbox'.</msg>
+<msg time="2024-11-28T09:52:26.704878" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/checkbox'.</msg>
 <arg>${url}</arg>
-<arg>${browser}</arg>
+<arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-27T17:27:25.992818" elapsed="4.125763"/>
+<status status="PASS" start="2024-11-28T09:52:26.704710" elapsed="13.168581"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-11-27T17:27:30.118887" elapsed="0.023006"/>
+<status status="PASS" start="2024-11-28T09:52:39.873557" elapsed="0.028703"/>
+</kw>
+<status status="PASS" start="2024-11-28T09:52:26.704519" elapsed="13.197915"/>
+</kw>
+<test id="s1-s5-t1" name="Window Handling Test" line="9">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-28T09:52:42.903760" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-28T09:52:39.903121" elapsed="3.001110"/>
 </kw>
 <kw name="Handle New Tabs" owner="keywords_window_handling">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:27:30.292682" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot_tab1.png"&gt;&lt;img src="screenshot_tab1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-28T09:52:43.015786" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot_tab1.png"&gt;&lt;img src="screenshot_tab1.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>${screenshot1}</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-11-27T17:27:30.143488" elapsed="0.149318"/>
+<status status="PASS" start="2024-11-28T09:52:42.906367" elapsed="0.109534"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-27T17:27:33.293448" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-11-28T09:52:46.016718" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-27T17:27:30.292967" elapsed="3.000797"/>
+<status status="PASS" start="2024-11-28T09:52:43.016073" elapsed="3.001168"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:27:33.295347" level="INFO">Executing JavaScript:
+<msg time="2024-11-28T09:52:46.019508" level="INFO">Executing JavaScript:
 window.open();
 Without any arguments.</msg>
 <arg>window.open();</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-11-27T17:27:33.294256" elapsed="0.029822"/>
+<status status="PASS" start="2024-11-28T09:52:46.018065" elapsed="0.034567"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-27T17:27:36.325378" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-11-28T09:52:49.054073" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-27T17:27:33.324820" elapsed="3.000917"/>
+<status status="PASS" start="2024-11-28T09:52:46.053141" elapsed="3.001432"/>
 </kw>
 <kw name="Switch Window" owner="SeleniumLibrary">
 <arg>NEW</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" start="2024-11-27T17:27:36.326302" elapsed="0.017480"/>
+<status status="PASS" start="2024-11-28T09:52:49.055125" elapsed="0.015673"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-27T17:27:39.345343" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-11-28T09:52:52.071989" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-27T17:27:36.344354" elapsed="3.001325"/>
+<status status="PASS" start="2024-11-28T09:52:49.071353" elapsed="3.001040"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:27:39.346897" level="INFO">Opening url 'https://demoqa.com/text-box'</msg>
+<msg time="2024-11-28T09:52:52.073519" level="INFO">Opening url 'https://demoqa.com/text-box'</msg>
 <arg>${textbox_url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-11-27T17:27:39.346303" elapsed="1.420305"/>
+<status status="PASS" start="2024-11-28T09:52:52.072947" elapsed="0.667888"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-27T17:27:43.767797" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-11-28T09:52:55.742440" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-27T17:27:40.767075" elapsed="3.001196"/>
+<status status="PASS" start="2024-11-28T09:52:52.741668" elapsed="3.001163"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-11-27T17:27:43.877169" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot_tab2.png"&gt;&lt;img src="screenshot_tab2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-11-28T09:52:55.861343" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshot_tab2.png"&gt;&lt;img src="screenshot_tab2.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>${screenshot2}</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-11-27T17:27:43.769006" elapsed="0.108309"/>
+<status status="PASS" start="2024-11-28T09:52:55.743501" elapsed="0.117953"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-27T17:27:47.878196" level="INFO">Slept 4 seconds.</msg>
+<msg time="2024-11-28T09:52:59.862266" level="INFO">Slept 4 seconds.</msg>
 <arg>4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-27T17:27:43.877534" elapsed="4.001133"/>
+<status status="PASS" start="2024-11-28T09:52:55.861619" elapsed="4.001129"/>
 </kw>
-<status status="PASS" start="2024-11-27T17:27:30.142615" elapsed="17.736567"/>
+<status status="PASS" start="2024-11-28T09:52:42.905366" elapsed="16.957873"/>
 </kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-28T09:53:02.864996" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-28T09:52:59.863990" elapsed="3.001510"/>
+</kw>
+<status status="PASS" start="2024-11-28T09:52:39.902565" elapsed="22.963813"/>
+</test>
+<kw name="Suite_Teardown" owner="setup" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-11-27T17:27:47.879963" elapsed="0.066829"/>
+<status status="PASS" start="2024-11-28T09:53:02.869139" elapsed="0.064321"/>
 </kw>
-<status status="PASS" start="2024-11-27T17:27:25.992449" elapsed="21.954661"/>
-</test>
-<status status="PASS" start="2024-11-27T17:27:25.989304" elapsed="21.958177"/>
+<status status="PASS" start="2024-11-28T09:53:02.868480" elapsed="0.065151"/>
+</kw>
+<status status="PASS" start="2024-11-28T09:52:26.699040" elapsed="36.234649"/>
 </suite>
-<status status="PASS" start="2024-11-27T17:26:23.752413" elapsed="84.195691"/>
+<status status="PASS" start="2024-11-28T09:50:37.827275" elapsed="145.107234"/>
 </suite>
 <statistics>
 <total>
